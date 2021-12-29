@@ -1,2 +1,2 @@
-# Proyecto-I---Programaci-n-EPN
+# Proyecto-I---Programación-EPN
 Diciembre 2021
