@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora científica</title>
+        
+</head>
+<body>
+      <script src="main.js"></script>
+      <script src="suma.js"></script>
+      <script src="resta.js"></script>
+      <script src="multiplicacion.js"></script>
+      <script src="division.js"></script>
+      <script src="potencia.js"></script>
+      <script src="raizcuadrada.js"></script>
+      <script src="raizcubica.js"></script>
+      <script src="inverso.js"></script>
+</body>
+
+
+<script>
+  var repeat=true;
+
+  while(repeat==true){
+
+    seleccion=prompt(menu);
+
+    switch(seleccion){
+    case "S":
+      num1=parseFloat(prompt("Ingrese el primer sumando"));
+      num2=parseFloat(prompt("Ingrese el segundo sumando"));
+       suma(num1, num2);
+       break;
+
+    case("R"):
+      num1=parseFloat(prompt("Ingrese el minuendo"));
+      num2=parseFloat(prompt("Ingrese el sustraendo"));
+      resta(num1, num2);
+      break;
+
+    case("M"):
+      num1=parseFloat(prompt("Ingrese el primer factor"));
+      num2=parseFloat(prompt("Ingrese el segundo factor"));
+      multiplicacion(num1, num2);
+      break;
+
+    case("D"):
+      num1=parseFloat(prompt("Ingrese el dividendo"));
+      num2=parseFloat(prompt("Ingrese el divisor"));
+      division(num1, num2);
+      break;
+      
+    case("P"):
+      num1=parseFloat(prompt("Ingrese la base"));
+      num2=parseFloat(prompt("Ingrese el exponente"));
+      potencia(num1, num2);
+      break;
+
+    case("R2"):
+      num1=parseFloat(prompt("Ingrese el radicando"));
+      raizcuadrada(num1);
+      break;
+
+    case("R3"):
+      num1=parseFloat(prompt("Ingrese el radicando"));    
+      raizcubica(num1);
+      break;
+
+    case("I"):
+    num1=parseFloat(prompt("Ingrese su número"));  
+      inverso(num1);
+      break;
+      
+    case("Jugar"):
+     break;
+
+    case("X"):
+      repeat=false;
+      break;
+    
+    default:
+      alert("La opción elegida no está definida");
+      break;
+  }
+}
+</script>
+</html>
