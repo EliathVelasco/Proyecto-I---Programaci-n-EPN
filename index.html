@@ -22,6 +22,10 @@
 
 <script>
   var repeat=true;
+  
+  var resultado = 0;
+
+  var Ans = parseFloat("ans",resultado);
 
   while(repeat==true){
 
@@ -31,7 +35,7 @@
     case "S":
       num1=parseFloat(prompt("Ingrese el primer sumando"));
       num2=parseFloat(prompt("Ingrese el segundo sumando"));
-       suma(num1, num2);
+      suma(num1, num2);
        break;
 
     case("R"):
@@ -84,6 +88,7 @@
       alert("La opción elegida no está definida");
       break;
   }
+  
 }
 </script>
 </html>
